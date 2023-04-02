@@ -212,6 +212,7 @@ def send_email(sign_list):
     smtp.quit()
 
 def main():
+    print(ENV['BDUSS'])
     if ('BDUSS' not in ENV):
         logger.error("未配置BDUSS")
         return
